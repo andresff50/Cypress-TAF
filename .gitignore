@@ -1,0 +1,30 @@
+node_modules/
+
+# ────────────────
+# Cypress
+# ────────────────
+cypress/screenshots/
+cypress/videos/
+cypress/downloads/
+cypress/fixtures/example.json
+
+.cy-tmp/
+.cypress-cache/
+CYPRESS_CACHE_FOLDER/
+
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+.history/
+
+# ────────────────
+# Builds
+# ────────────────
+dist/
+build/
+
+# Env
+.env
+.env.*
