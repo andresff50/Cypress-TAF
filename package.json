@@ -1,17 +1,32 @@
 {
   "name": "cypress-taf",
   "version": "1.0.0",
-  "description": "",
+  "description": "Cypress Test Automation Framework",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy": "cypress",
+    "cy:open": "npm run cy -- open",
+    "cy:run": "npm run cy -- run",
+    "cy:run:chrome": "npm run cy -- run --browser chrome",
+    "cy:run:headed": "npm run cy -- run --headed",
+    "cy:ci": "npm run cy -- run --browser chrome --headless",
+    "cy:junit": "npm run cy -- run --reporter junit",
+    "cy:verify": "npm run cy -- verify",
+    "cy:info": "npm run cy -- info",
+    "ts:check": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "devDependencies": {
-    "cypress": "^15.7.0",
-    "typescript": "^5.9.3"
+    "@types/node": "25.1.0",
+    "cypress": "15.9.0",
+    "cypress-terminal-report": "7.3.3",
+    "mocha-junit-reporter": "2.2.1",
+    "typescript": "5.9.3"
   }
 }

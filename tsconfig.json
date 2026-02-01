@@ -2,8 +2,25 @@
   "compilerOptions": {
     "target": "es2020",
     "lib": ["es2020", "dom"],
+    "module": "ESNext",
     "moduleResolution": "node",
-    "types": ["cypress"]
+    "types": ["cypress", "node"],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@support/*": ["cypress/support/*"],
+      "@pages/*": ["cypress/pages/*"],
+      "@commands/*": ["cypress/support/commands/*"],
+      "@fixtures/*": ["cypress/fixtures/*"],
+      "@utils/*": ["cypress/utils/*"]
+    },
   },
   "include": ["cypress/**/*.ts"]
 }
